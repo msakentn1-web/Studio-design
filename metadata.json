@@ -1,0 +1,6 @@
+{
+  "name": "Maestro Design Studio",
+  "description": "متجر احترافي فخم لتصاميم الهوية البصرية، الشعارات، والموشن جرافيك مع لوحة تحكم وإدارة طلبات عبر واتساب",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

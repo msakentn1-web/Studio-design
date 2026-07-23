@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+
+@layer base {
+  :root {
+    --font-cairo: 'Cairo', sans-serif;
+    --font-cinzel: 'Cinzel', serif;
+  }
+  
+  body {
+    font-family: var(--font-cairo);
+    background-color: #030712;
+    color: #F1F5F9;
+    overflow-x: hidden;
+  }
+}
+
+/* Hide Next.js Dev Toast Badge */
+[data-nextjs-toast] {
+  display: none !important;
+}
+
+/* Luxury Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d1a36;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Metallic Silver / Chrome 3D Gradient Text */
+.text-chrome-gradient {
+  background: linear-gradient(180deg, #FFFFFF 0%, #E2E8F0 35%, #94A3B8 70%, #CBD5E1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.8));
+}
+
+/* Electric Cyan / Neon Blue Text */
+.text-cyan-neon {
+  background: linear-gradient(180deg, #00F0FF 0%, #0088FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.5));
+}
+
+/* Glowing Neon Cyan Button */
+.btn-cyan-glow {
+  background: linear-gradient(135deg, #00d2ff 0%, #0072ff 100%);
+  box-shadow: 0 0 25px rgba(0, 240, 255, 0.4), 0 0 50px rgba(0, 114, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-cyan-glow:hover {
+  box-shadow: 0 0 35px rgba(0, 240, 255, 0.7), 0 0 65px rgba(0, 114, 255, 0.4);
+  transform: translateY(-2px) scale(1.02);
+}
+
+/* Glassmorphism Dark Cyan Cards */
+.glass-cyan-card {
+  background: rgba(10, 20, 42, 0.65);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-cyan-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-cyan-hover:hover {
+  background: rgba(15, 30, 60, 0.8);
+  border-color: rgba(0, 240, 255, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px -5px rgba(0, 0, 0, 0.9), 0 0 25px rgba(0, 240, 255, 0.3);
+}
+
+/* Gold Gradient Utilities (Legacy compatibility) */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #00f0ff 0%, #0088ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Shimmer Light effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,240,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* 3D Stage / Podium Perspective */
+.perspective-stage {
+  perspective: 1200px;
+}
